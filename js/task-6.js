@@ -28,7 +28,7 @@ const buttonCreate = document.querySelector(`button[data-create]`);
 buttonCreate.addEventListener(`click`, () => {
   const input = document.querySelector(`input`);
   const amount = input.value;
-  if (amount => 1 && amount <= 100) {
+  if (amount >= 1 && amount <= 100) {
     createBoxes(amount)
   }
   input.value = ``;
